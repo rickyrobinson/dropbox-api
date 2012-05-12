@@ -42,6 +42,8 @@ module Dropbox
       add_method :post, "/fileops/delete",         :as => "delete"
       add_method :post, "/fileops/move",           :as => "move"
 
+      add_method :post, "/delta",                  :as => "delta", :root => false
+
     end
 
   end

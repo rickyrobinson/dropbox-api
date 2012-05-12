@@ -142,4 +142,10 @@ describe Dropbox::API::Client do
 
   end
 
+  describe "#delta" do
+    it "returns an array of files and dirs" do
+      pending
+    end
+  end
+
 end
