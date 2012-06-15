@@ -1,4 +1,4 @@
-require "oauth"
+require "omniauth-dropbox"
 require "multi_json"
 require "hashie"
 

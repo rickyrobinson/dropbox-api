@@ -48,6 +48,7 @@ module Dropbox
         entries  = []
         has_more = true
         params   = cursor ? {:cursor => cursor} : {}
+        params.merge(:include_deleted => true)
         while has_more
           response        = raw.delta(params)
           params[:cursor] = response['cursor']
